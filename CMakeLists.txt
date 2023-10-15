@@ -3,7 +3,7 @@ project(tc)
 #set(CMAKE_C_COMPILER gcc)
 #set(CMAKE_CXX_COMPILER g++)
 OPTION (LWS_WITH_MINIMAL_EXAMPLES OFF)
-add_compile_definitions(LWS_IPV6=1)
+option(LWS_IPV6 ON)
 add_subdirectory(extern_libs/libwebsockets)
 
 add_executable(test testcase.c)
